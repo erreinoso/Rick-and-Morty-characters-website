@@ -10,28 +10,34 @@ class CharacterDetail extends React.Component {
   render() {
     // console.log(this.props.name);
     return (
-      <div>
+      <div className="container">
         <Link to="/">
-          <div>
-            <div onClick={this.handleModalContentClick}>
-              <Link to="/">
-                <span> Volver </span>
-              </Link>
-              <div>
-                <img
-                  src={this.props.image}
-                  alt={`Imagen de ${this.props.name}`}
-                />
-              </div>
-              <div>
-                <h2>{this.props.name}</h2>
-                <ul>
-                  <li>Status: {this.props.status}</li>
-                  <li>Species: {this.props.species}</li>
-                  <li>Origin: {this.props.origin.name}</li>
-                  <li>Episodes: {this.props.episodes}</li>
-                </ul>
-              </div>
+          <div className="detailCard" onClick={this.handleModalContentClick}>
+            <Link to="/">
+              <span className="detailCard__back"> Volver </span>
+            </Link>
+            <div className="detailCard__img">
+              <img
+                src={this.props.image}
+                alt={`Imagen de ${this.props.name}`}
+              />
+            </div>
+            <div className="detailCard__text">
+              <h2>{this.props.name}</h2>
+              <ul className="detailsList">
+                <li>
+                  Status: <p>{this.props.status}</p>
+                </li>
+                <li>
+                  Species: <p>{this.props.species}</p>
+                </li>
+                <li>
+                  Origin: <p>{this.props.origin.name}</p>
+                </li>
+                <li>
+                  Episodes: <p>{this.props.episodes}</p>
+                </li>
+              </ul>
             </div>
           </div>
         </Link>
