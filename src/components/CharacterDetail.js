@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../stylesheets/Characterdetail.scss';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 class CharacterDetail extends React.Component {
   handleModalContentClick = (ev) => {
@@ -40,14 +40,14 @@ class CharacterDetail extends React.Component {
   }
 }
 
-// CharacterDetail.propTypes = {
-//   characters: PropTypes.arrayOf(PropTypes.object).isRequired,
-//   name: PropTypes.string,
-//   species: PropTypes.string,
-//   status: PropTypes.string,
-//   origin: PropTypes.string,
-//   episodes: PropTypes.number,
-//   id: PropTypes.number,
-//   handleModalContentClick: PropTypes.func,
-// };
+CharacterDetail.propTypes = {
+  characters: PropTypes.arrayOf(PropTypes.object).isRequired,
+  name: PropTypes.string,
+  species: PropTypes.string,
+  status: PropTypes.string,
+  origin: PropTypes.string,
+  episodes: PropTypes.number,
+  id: PropTypes.number,
+  handleModalContentClick: PropTypes.func,
+};
 export default CharacterDetail;
