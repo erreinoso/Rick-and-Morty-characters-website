@@ -8,23 +8,33 @@ class Filters extends React.Component {
   handleFilterName(ev) {
     this.props.changeFilterText(ev.currentTarget.value);
   }
-
+  handleModalContentClick = (ev) => {
+    ev.preventDefault();
+  };
   render() {
     return (
-      <section>
-        <form className="border--medium m-0 mb-1 mt-1 col2">
+      <header className="header">
+        <form>
           <div>
             <input
               type="text"
               placeholder="Nombre del personaje..."
-              // className="form__input-text"
               id="filterName"
               value={this.props.filterText}
               onChange={this.handleFilterName}
+              onKeyUp={this.handleModalContentClick}
             />
           </div>
+          <div>
+            <img
+              src="../images/RickAndMorty33.jpg"
+              className="header__img"
+              alt="Imagen Rick y Morty"
+            />
+            <h1>Personajes de</h1>
+          </div>
         </form>
-      </section>
+      </header>
     );
   }
 }

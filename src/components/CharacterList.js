@@ -1,6 +1,5 @@
 import React from 'react';
 import CharacterCard from './CharacterCard';
-import '../stylesheets/CharacterList.scss';
 
 class CharacterList extends React.Component {
   renderList() {
@@ -19,17 +18,19 @@ class CharacterList extends React.Component {
   }
   render() {
     return (
-      <section>
-        <ul>
+      <main>
+        <ul className="list">
           {this.props.characters.length === 0 ? (
-            <p>Personaje no encontrado</p>
+            <p>
+              No hay ningun personaje que conincida con {this.props.filterText}
+            </p>
           ) : (
             this.renderList()
           )}
           {/* {this.renderList()}
           <p>Personaje no encontrado</p> */}
         </ul>
-      </section>
+      </main>
     );
   }
 }

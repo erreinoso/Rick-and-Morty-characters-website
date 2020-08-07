@@ -61,7 +61,7 @@ class App extends React.Component {
   }
 
   render() {
-    const filteredCharacter = this.state.characterData.filter((character) => {
+    let filteredCharacter = this.state.characterData.filter((character) => {
       if (this.state.filterText !== '') {
         return character.name
           .toUpperCase()
@@ -79,7 +79,11 @@ class App extends React.Component {
             changeFilterText={this.changeFilterText}
             data={this.state.characterData}
           />
-          <CharacterList characters={filteredCharacter} />
+          <CharacterList
+            characters={filteredCharacter}
+            filterText={this.state.filterText}
+            sort={this.sortNames}
+          />
         </Route>
         <Switch>
           <Route
