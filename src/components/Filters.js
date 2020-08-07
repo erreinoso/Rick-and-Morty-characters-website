@@ -19,7 +19,7 @@ class Filters extends React.Component {
               placeholder="Nombre del personaje..."
               // className="form__input-text"
               id="filterName"
-              // value={props.filterName}
+              value={this.props.filterText}
               onChange={this.handleFilterName}
             />
           </div>

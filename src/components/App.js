@@ -4,7 +4,7 @@ import CharacterList from './CharacterList';
 import CharacterDetail from './CharacterDetail';
 import Filters from './Filters';
 import getDataFromApi from '../services/getDataFromApi';
-// import { Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 class App extends React.Component {
   constructor(props) {
@@ -17,7 +17,6 @@ class App extends React.Component {
     };
     this.changeFilterText = this.changeFilterText.bind(this);
     this.renderCharacterDetail = this.renderCharacterDetail.bind(this);
-    // this.renderFilteredCharacters = this.renderFilteredCharacters.bind(this);
   }
   componentDidMount() {
     // get data from api
@@ -38,20 +37,22 @@ class App extends React.Component {
     console.log('filtertext', text);
   }
 
-  renderCharacterDetail() {
-    const routeCharacterId = this.props.match.params.CharacterId;
-    const character = this.state.characterData.find(
-      (character) => character.id === routeCharacterId
-    );
-    if (character) {
+  renderCharacterDetail(props) {
+    console.log(props);
+    const routeCharacterId = parseInt(props.match.params.characterId);
+    const characterClicked = this.state.characterData.find((character) => {
+      return character.id === routeCharacterId;
+    });
+    console.log(characterClicked);
+    if (characterClicked) {
       return (
         <CharacterDetail
-          name={character.name}
-          status={character.status}
-          species={character.species}
-          origin={character.origin}
-          episodes={character.episode.length}
-          image={character.image}
+          name={characterClicked.name}
+          status={characterClicked.status}
+          species={characterClicked.species}
+          origin={characterClicked.origin}
+          episodes={characterClicked.episode.length}
+          image={characterClicked.image}
         />
       );
     } else {
@@ -72,19 +73,21 @@ class App extends React.Component {
 
     return (
       <div>
-        {/* <Route exact path="/"> */}
-        <Filters
-          filterText={this.state.filterText}
-          changeFilterText={this.changeFilterText}
-          data={this.state.characterData}
-        />
-        <CharacterList characters={filteredCharacter} />
-        {/* </Route> */}
-        {/* <Switch> */}
-        {/* <Route */}
-        {/* path="/character/:characterId" render={this.renderCharacterDetail} */}
-        {/* /> */}
-        {/* </Switch> */}
+        <Route exact path="/">
+          <Filters
+            filterText={this.state.filterText}
+            changeFilterText={this.changeFilterText}
+            data={this.state.characterData}
+          />
+          <CharacterList characters={filteredCharacter} />
+        </Route>
+        <Switch>
+          <Route
+            exact
+            path="/character/:characterId"
+            render={this.renderCharacterDetail}
+          />
+        </Switch>
       </div>
     );
   }

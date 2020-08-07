@@ -4,6 +4,7 @@ import '../stylesheets/CharacterList.scss';
 
 class CharacterList extends React.Component {
   renderList() {
+    console.log(this.props);
     return this.props.characters.map((character, index) => {
       return (
         <CharacterCard
@@ -19,7 +20,15 @@ class CharacterList extends React.Component {
   render() {
     return (
       <section>
-        <ul>{this.renderList()}</ul>
+        <ul>
+          {this.props.characters.length === 0 ? (
+            <p>Personaje no encontrado</p>
+          ) : (
+            this.renderList()
+          )}
+          {/* {this.renderList()}
+          <p>Personaje no encontrado</p> */}
+        </ul>
       </section>
     );
   }
