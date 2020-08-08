@@ -14,18 +14,19 @@ class Filters extends React.Component {
   render() {
     return (
       <header className="header">
-        <form>
-          <div>
-            <input
-              type="text"
-              placeholder="Nombre del personaje..."
-              id="filterName"
-              value={this.props.filterText}
-              onChange={this.handleFilterName}
-              onKeyUp={this.handleModalContentClick}
-            />
+        <section className="header__box">
+          <div className="header__input">
+            <form onSubmit={this.handleModalContentClick}>
+              <input
+                type="text"
+                placeholder="Nombre del personaje..."
+                id="filterName"
+                value={this.props.filterText}
+                onChange={this.handleFilterName}
+              />
+            </form>
           </div>
-          <div>
+          <div className="header__img">
             <img
               src="../images/RickAndMorty33.jpg"
               className="header__img"
@@ -33,7 +34,7 @@ class Filters extends React.Component {
             />
             <h1>Personajes de</h1>
           </div>
-        </form>
+        </section>
       </header>
     );
   }

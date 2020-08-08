@@ -26,16 +26,16 @@ class CharacterDetail extends React.Component {
               <h2>{this.props.name}</h2>
               <ul className="detailsList">
                 <li>
-                  Status: <p>{this.props.status}</p>
+                  Status: <span>{this.props.status}</span>
                 </li>
                 <li>
-                  Species: <p>{this.props.species}</p>
+                  Species: <span>{this.props.species}</span>
                 </li>
                 <li>
-                  Origin: <p>{this.props.origin.name}</p>
+                  Origin: <span>{this.props.origin.name}</span>
                 </li>
                 <li>
-                  Episodes: <p>{this.props.episodes}</p>
+                  Episodes: <span>{this.props.episodes}</span>
                 </li>
               </ul>
             </div>

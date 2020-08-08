@@ -12,12 +12,31 @@
   background-color: black;
   color: white;
   background-repeat: no-repeat;
+
+  .header__box {
+    @media all and (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-content: space-between;
+      border: 1px solid orange;
+    }
+  }
   input {
     margin-top: 20px;
     margin-left: 20px;
     border: white;
     width: 145px;
     height: 35px;
+    // position: absolute;
+    // transform: translate(-375px, -50px);
+  }
+  .header__img {
+    display: none;
+    @media all and (min-width: 768px) {
+      display: flex;
+      transform: translate(100px, 0px);
+    }
   }
 }
 
