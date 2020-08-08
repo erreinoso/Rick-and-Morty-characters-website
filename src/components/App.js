@@ -34,6 +34,7 @@ class App extends React.Component {
     this.setState({
       filterText: text,
     });
+
     console.log('filtertext', text);
   }
 
