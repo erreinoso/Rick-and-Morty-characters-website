@@ -22,13 +22,11 @@ class CharacterList extends React.Component {
         <ul className="list">
           {this.props.characters.length === 0 ? (
             <p>
-              No hay ningun personaje que conincida con {this.props.filterText}
+              No hay ningun personaje que coincida con {this.props.filterText}
             </p>
           ) : (
             this.renderList()
           )}
-          {/* {this.renderList()}
-          <p>Personaje no encontrado</p> */}
         </ul>
       </main>
     );

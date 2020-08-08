@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../stylesheets/Characterdetail.scss';
 import PropTypes from 'prop-types';
+let icon;
 
 class CharacterDetail extends React.Component {
   constructor(props) {
