@@ -30,9 +30,9 @@ class CharacterDetail extends React.Component {
 
     return (
       <div className="container">
-        <Link to="/">
+        <Link style={{ textDecoration: 'none' }} to="/">
           <div className="detailCard" onClick={this.handleModalContentClick}>
-            <Link to="/">
+            <Link style={{ textDecoration: 'none' }} to="/">
               <span className="detailCard__back"> Volver </span>
             </Link>
             <div className="detailCard__img">

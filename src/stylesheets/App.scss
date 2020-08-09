@@ -4,68 +4,117 @@
   list-style-type: none;
   text-decoration: none;
 }
-link {
-  text-decoration: none;
-}
-
-.header {
-  height: 250px;
-  background-image: url('../images/RickAndMorty33.jpg');
-  background-size: contain;
-  background-color: black;
-  color: white;
-  background-repeat: no-repeat;
-
-  .header__box {
-    @media all and (min-width: 768px) {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-content: space-between;
-      border: 1px solid orange;
-    }
-  }
-  input {
-    margin-top: 20px;
-    margin-left: 20px;
-    border: white;
-    width: 145px;
-    height: 35px;
-    // position: absolute;
-    // transform: translate(-375px, -50px);
-  }
-  .header__img {
-    display: none;
-    @media all and (min-width: 768px) {
-      display: flex;
-      transform: translate(100px, 0px);
-    }
-  }
-}
-
 body {
   background-image: url('../images/MainBackground.jpg');
   background-size: cover;
   list-style-type: none;
   text-decoration: none;
 }
+
+.header {
+  height: 350px;
+  // background-image: url('../images/RickAndMorty33.jpg');
+  background-size: contain;
+  background-color: black;
+  color: white;
+  background-repeat: no-repeat;
+  @media all and (min-width: 768px) {
+    height: 250px;
+  }
+  .header__box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    // justify-content: center;
+    align-items: center;
+    border: 1px solid orange;
+    @media all and (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-content: space-around;
+      height: 250px;
+    }
+    .header__img {
+      height: 250px;
+    }
+    .header__input {
+      input {
+        background: inherit;
+        margin-top: 20px;
+        margin-left: 20px;
+        border: white;
+        width: 145px;
+        height: 35px;
+        position: fixed;
+        transform: translate(-100px, -250px);
+        @media all and (min-width: 768px) {
+          position: fixed;
+          transform: translate(-195px, -125px);
+        }
+      }
+    }
+
+    .header__box--title {
+      @media all and (min-width: 768px) {
+        display: block;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+      }
+      .header__title {
+        text-align: center;
+        // padding: 10px;
+        @media all and (min-width: 768px) {
+          // position: absolute;
+          // display: flex;
+          // transform: translate(200px, 100px);
+        }
+      }
+      .header__logo {
+        display: none;
+        @media all and (min-width: 768px) {
+          display: block;
+          // justify-content: center;
+          margin: auto;
+          // align-content: center;
+          // align-items: center;
+          // text-align: center;
+          height: 150px;
+          // transform: translate(100px, 0px);
+        }
+      }
+    }
+  }
+}
+
 main {
   text-decoration: none;
 
   max-height: 100%;
   margin-top: 0px;
   .list {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 30px;
+    // display: grid;
+    // grid-template-columns: repeat(1, 1fr);
+    // grid-gap: 30px;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    padding: 20px;
+    li {
+      margin: 20px;
+    }
     @media all and (min-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 30px;
       grid-template-columns: repeat(3, 1fr);
     }
     @media all and (min-width: 1200px) {
       grid-template-columns: repeat(5, 1fr);
     }
   }
-
   .serieCard {
     height: 100%;
     max-width: 200px;
@@ -82,7 +131,6 @@ main {
     .serieCard__img {
       max-height: 160px;
       max-width: 170px;
-
       img {
         margin-top: 10px;
         width: 100%;
@@ -90,7 +138,6 @@ main {
         border-bottom-right-radius: (7px);
       }
     }
-
     .serieCard__text {
       text-align: center;
       display: flex;

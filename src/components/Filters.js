@@ -1,4 +1,6 @@
 import React from 'react';
+import LogoTitle from '../images/RickandMorty.png';
+import LogoSearch from '../images/RickAndMorty33.jpg';
 
 class Filters extends React.Component {
   constructor(props) {
@@ -15,6 +17,13 @@ class Filters extends React.Component {
     return (
       <header className="header">
         <section className="header__box">
+          <div className="header__img">
+            <img
+              src={LogoSearch}
+              className="header__img"
+              alt="Imagen Rick y Morty hablando"
+            />
+          </div>
           <div className="header__input">
             <form onSubmit={this.handleModalContentClick}>
               <input
@@ -26,13 +35,17 @@ class Filters extends React.Component {
               />
             </form>
           </div>
-          <div className="header__img">
-            <img
-              src="../images/RickAndMorty33.jpg"
-              className="header__img"
-              alt="Imagen Rick y Morty"
-            />
-            <h1>Personajes de</h1>
+          <div className="header__box--title">
+            <div className="header__logo">
+              <img
+                src={LogoTitle}
+                className="header__logo"
+                alt="Imagen Rick y Morty"
+              />
+            </div>
+            <div className="header__title">
+              <h1>Busca tus personajes de Rick y Morty</h1>
+            </div>
           </div>
         </section>
       </header>

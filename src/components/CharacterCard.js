@@ -5,7 +5,10 @@ import { Link } from 'react-router-dom';
 class CharacterCard extends React.Component {
   render() {
     return (
-      <Link to={`/character/${this.props.id}`}>
+      <Link
+        style={{ textDecoration: 'none' }}
+        to={`/character/${this.props.id}`}
+      >
         <li className={`serieCard serieCard-${this.props.id}`}>
           <div className={`serieCard__img serieCard__img-${this.props.id}`}>
             <img src={this.props.image} alt={`Imagen de ${this.props.name}`} />
