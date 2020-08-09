@@ -1,6 +1,7 @@
 import React from 'react';
 import LogoTitle from '../images/RickandMorty.png';
 import LogoSearch from '../images/RickAndMorty33.jpg';
+import '../stylesheets/Filters.scss';
 
 class Filters extends React.Component {
   constructor(props) {

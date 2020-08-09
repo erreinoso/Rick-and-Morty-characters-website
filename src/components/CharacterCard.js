@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import '../stylesheets/CharacterList.scss';
 
 class CharacterCard extends React.Component {
   render() {
@@ -15,7 +16,10 @@ class CharacterCard extends React.Component {
           </div>
           <div className="serieCard__text">
             <h2 className="name">{this.props.name}</h2>
-            <h3 className="species">{this.props.species}</h3>
+            <h3 className="species">
+              {this.props.species}{' '}
+              {this.props.species === 'Alien' ? '👽' : '🧑'}
+            </h3>
           </div>
         </li>
       </Link>
