@@ -57,7 +57,7 @@ class App extends React.Component {
         />
       );
     } else {
-      return <p>Personaje no encontrado</p>;
+      return <p className="list__error">Personaje no encontrado</p>;
     }
   }
 

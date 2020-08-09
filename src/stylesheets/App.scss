@@ -1,12 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
-  box-sizing: border-box;
+
   list-style-type: none;
   text-decoration: none;
 }
 body {
   background-image: url('../images/MainBackground.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
   list-style-type: none;
   text-decoration: none;
 }
@@ -46,10 +51,9 @@ body {
         border: white;
         width: 145px;
         height: 35px;
-        position: fixed;
+        position: absolute;
         transform: translate(-100px, -250px);
         @media all and (min-width: 768px) {
-          position: fixed;
           transform: translate(-195px, -125px);
         }
       }
@@ -104,6 +108,10 @@ main {
     padding: 20px;
     li {
       margin: 20px;
+    }
+    .list__error {
+      color: white;
+      font-weight: bold;
     }
     @media all and (min-width: 768px) {
       display: grid;

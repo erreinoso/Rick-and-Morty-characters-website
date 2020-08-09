@@ -21,7 +21,7 @@ class CharacterList extends React.Component {
       <main>
         <ul className="list">
           {this.props.characters.length === 0 ? (
-            <p>
+            <p className="list__error">
               No hay ningun personaje que coincida con {this.props.filterText}
             </p>
           ) : (

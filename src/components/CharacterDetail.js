@@ -84,30 +84,5 @@ CharacterDetail.propTypes = {
   id: PropTypes.number,
   handleModalContentClick: PropTypes.func,
 };
+
 export default CharacterDetail;
-
-//human
-//<i class="far fa-user">
-
-//alien
-
-/* <i class="fab fa-reddit-alien"></i> */
-
-//Dead
-
-/* <i class="far fa-dizzy"></i> */
-
-//Alive
-
-/* <i class="far fa-smile-beam"></i> */
-
-//unknown
-//<i class="fas fa-question"></i>
-
-// {this.props.characters.length === 0 ? (
-//   <p>
-//     No hay ningun personaje que conincida con {this.props.filterText}
-//   </p>
-// ) : (
-//   this.renderList()
-// )}
