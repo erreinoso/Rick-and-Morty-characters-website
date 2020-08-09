@@ -5,7 +5,7 @@ https://twitter.com/_ElenaRReinoso
 https://github.com/erreinoso
 https://www.linkedin.com/in/eramirezreinoso/
 
-Ejercicio de evaluación final - REACT
+**Ejercicio de evaluación final - REACT**
 Descripción del ejercicio:
 
 El ejercicio consiste en desarrollar una página web con un listado de personajes de Rick and Morty, que podemos filtrar por el nombre del personaje. Vamos a usar React para realizarlo.

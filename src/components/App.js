@@ -5,6 +5,7 @@ import CharacterDetail from './CharacterDetail';
 import Filters from './Filters';
 import getDataFromApi from '../services/getDataFromApi';
 import { Route, Switch } from 'react-router-dom';
+import ImgError from '../images/RickAndMortyError.png';
 
 class App extends React.Component {
   constructor(props) {
@@ -57,7 +58,11 @@ class App extends React.Component {
         />
       );
     } else {
-      return <p className="list__error">Personaje no encontrado</p>;
+      return (
+        <div className="imgError">
+          <img src={ImgError} alt="Personaje no encontrado" />
+        </div>
+      );
     }
   }
 

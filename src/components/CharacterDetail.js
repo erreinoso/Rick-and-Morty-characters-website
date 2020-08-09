@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../stylesheets/Characterdetail.scss';
 import PropTypes from 'prop-types';
+
 let icon;
 
 class CharacterDetail extends React.Component {
@@ -26,8 +27,6 @@ class CharacterDetail extends React.Component {
   }
 
   render() {
-    // console.log(this.props.name);
-
     return (
       <div className="container">
         <Link style={{ textDecoration: 'none' }} to="/">
@@ -49,7 +48,6 @@ class CharacterDetail extends React.Component {
                 <li>
                   Status: <span className="listData">{this.props.status} </span>{' '}
                   <i class={this.iconFunction()}></i>
-                  {/* //Corregir esto, hay unknownn */}
                 </li>
                 <li>
                   Species:{' '}
