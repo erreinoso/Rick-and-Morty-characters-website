@@ -38,7 +38,6 @@
         }
       }
     }
-
     .header__box--title {
       @media all and (min-width: 768px) {
         display: block;
@@ -48,24 +47,13 @@
       }
       .header__title {
         text-align: center;
-        // padding: 10px;
-        @media all and (min-width: 768px) {
-          // position: absolute;
-          // display: flex;
-          // transform: translate(200px, 100px);
-        }
       }
       .header__logo {
         display: none;
         @media all and (min-width: 768px) {
           display: block;
-          // justify-content: center;
           margin: auto;
-          // align-content: center;
-          // align-items: center;
-          // text-align: center;
           height: 150px;
-          // transform: translate(100px, 0px);
         }
       }
     }

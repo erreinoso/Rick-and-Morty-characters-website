@@ -5,11 +5,8 @@ main {
   .list {
     display: flex;
     flex-direction: column;
-    align-items: center;
+
     padding: 20px;
-    li {
-      margin: 20px;
-    }
     .list__error {
       color: white;
       font-weight: bold;
@@ -24,19 +21,23 @@ main {
       grid-template-columns: repeat(5, 1fr);
     }
   }
+
   .serieCard {
-    height: 100%;
-    max-width: 200px;
+    height: 318px;
+    width: 200px;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    // align-items: center;
     border: (5px solid rgba(255, 255, 255, 0.2));
     border-top-left-radius: (15px);
     border-bottom-right-radius: (15px);
     background-color: rgba(231, 211, 211, 0.411);
-
+    margin: 20px;
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0px 0px 15px 15px rgba(203, 235, 205, 0.4);
+    }
     .serieCard__img {
       max-height: 160px;
       max-width: 170px;
@@ -57,4 +58,9 @@ main {
       }
     }
   }
+}
+
+a {
+  display: flex;
+  justify-content: center;
 }

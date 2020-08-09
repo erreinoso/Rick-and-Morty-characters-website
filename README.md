@@ -1,9 +1,10 @@
 👋 This tiny project was created by Elena Ramírez Reinoso
 
-How to reach me:
-https://twitter.com/_ElenaRReinoso
-https://github.com/erreinoso
-https://www.linkedin.com/in/eramirezreinoso/
+**How to reach me:**
+
+- https://twitter.com/_ElenaRReinoso
+- https://github.com/erreinoso
+- https://www.linkedin.com/in/eramirezreinoso/
 
 **Ejercicio de evaluación final - REACT**
 Descripción del ejercicio:
@@ -56,7 +57,7 @@ Que funcione bien el responsive en dispositivos pequeños.
 8. BONUS: Ordenación
    Un extra interesante sería que ordenáseis el listado de personajes alfabéticamente por nombre.
 
-React básico
+**React básico**
 Crea componentes con sintaxis correcta*.
 Crea una estructura adecuada de componentes*.
 Usa las props para pasar datos a componentes hijos*.
@@ -74,6 +75,6 @@ Crea rutas navegables dentro de una aplicación
 Issues
 Haber resuelto las issues de la evaluación intermedia *
 
-Otros criterios a tener en cuenta
-Usar inglés para nombres de variables, funciones, clases, mensajes de commit, nombres de ficheros.
-El repositorio de GitHub debe tener README.
+- **Otros criterios a tener en cuenta**
+  Usar inglés para nombres de variables, funciones, clases, mensajes de commit, nombres de ficheros.
+  El repositorio de GitHub debe tener README.

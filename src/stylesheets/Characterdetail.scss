@@ -25,6 +25,10 @@
   border: (8px solid rgba(255, 255, 255, 0.2));
   border-top-left-radius: (25px);
   border-bottom-right-radius: (25px);
+  &:hover {
+    box-shadow: 1px 0px 15px 15px rgba(69, 232, 80, 0.6);
+    transform: scale(1.1);
+  }
   @media all and (min-width: 768px) {
     display: grid;
     margin: 100px;
