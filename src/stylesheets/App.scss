@@ -8,11 +8,18 @@
   text-decoration: none;
 }
 body {
-  background-image: url('../images/Background.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
+  // background-image: url('../images/Background.jpg');
+  // background-size: cover;
+  // background-repeat: no-repeat;
   list-style-type: none;
   text-decoration: none;
+  height: 100%;
+  @media all and (min-width: 768) {
+    background-size: cover;
+  }
+  @media all and (min-width: 1200px) {
+    background-size: cover;
+  }
 }
 
 h1 {

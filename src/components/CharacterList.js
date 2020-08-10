@@ -4,7 +4,6 @@ import '../stylesheets/CharacterList.scss';
 
 class CharacterList extends React.Component {
   renderList() {
-    console.log(this.props);
     return this.props.characters.map((character, index) => {
       return (
         <CharacterCard

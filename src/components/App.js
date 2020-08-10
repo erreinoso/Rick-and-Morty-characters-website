@@ -35,17 +35,13 @@ class App extends React.Component {
     this.setState({
       filterText: text,
     });
-
-    console.log('filtertext', text);
   }
 
   renderCharacterDetail(props) {
-    console.log(props);
     const routeCharacterId = parseInt(props.match.params.characterId);
     const characterClicked = this.state.characterData.find((character) => {
       return character.id === routeCharacterId;
     });
-    console.log(characterClicked);
     if (characterClicked) {
       return (
         <CharacterDetail
