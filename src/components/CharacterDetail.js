@@ -73,7 +73,6 @@ class CharacterDetail extends React.Component {
   }
 }
 CharacterDetail.propTypes = {
-  characters: PropTypes.arrayOf(PropTypes.object).isRequired,
   name: PropTypes.string,
   species: PropTypes.string,
   status: PropTypes.string,

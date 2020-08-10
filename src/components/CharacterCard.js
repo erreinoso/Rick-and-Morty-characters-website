@@ -27,7 +27,6 @@ class CharacterCard extends React.Component {
   }
 }
 CharacterCard.propTypes = {
-  characters: PropTypes.arrayOf(PropTypes.object).isRequired,
   species: PropTypes.string,
   name: PropTypes.string,
   id: PropTypes.number,
