@@ -24,7 +24,7 @@ The object is to create a webpage that lets the user display and filter characte
 - Use a grid system to display characters
 - CSS to make it stylish
 
-![screenshot of search page](<img src="./RickMorty-Git.png" alt="Rick y Morty screenshot" width="400px" />)
+![screenshot of search page](https://github.com/erreinoso/Rick-and-Morty-characters-website/blob/master/RickMorty-Git.PNG)
 
 ## Learnings 💡
 
