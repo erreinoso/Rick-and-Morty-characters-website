@@ -55,16 +55,17 @@ The object is to create a webpage that lets the user display and filter characte
 
 To install local dependencies, type:
 
-###npm install
+### npm install
 
 Also, you need to install React Route and SASS:
 
-###npm install --save react-router-dom
-###npm install node-sass
+### npm install --save react-router-dom
+
+### npm install node-sass
 
 In the project directory, type:
 
-###npm start
+###vnpm start
 This runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
