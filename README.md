@@ -8,19 +8,19 @@ In addition, through localStorage we can save our data in the browser.
 The object is to create a webpage that lets the user display and filter characters from the TV series Rick and Morty.
 
  **- Requirements**
-Use React 
-Have at least one component for each of the following:
-   Filters with a minimum of search by name (text input)
-   CharacterList which displays a CharacterCard for each character
-   CharacterCard showing character's name, photo, and species
-   CharacterDetail showing character's foto, name, species, origin, number of episodes, and living/dead status
-Use React Router to build navigation between components
-Error components for no results or character not found circumstances
-Use icons/emojis to display character data
-Order characters alphabetically
-Good responsive design, especially for small devices
-Use a grid system to display characters
-CSS to make it stylish 
+- Use React 
+- Have at least one component for each of the following:
+   - Filters with a minimum of search by name (text input)
+    CharacterList which displays a CharacterCard for each character
+   - CharacterCard showing character's name, photo, and species
+   - CharacterDetail showing character's foto, name, species, origin, number of episodes, and living/dead status
+- Use React Router to build navigation between components
+- Error components for no results or character not found circumstances
+- Use icons/emojis to display character data
+- Order characters alphabetically
+- Good responsive design, especially for small devices
+- Use a grid system to display characters
+- CSS to make it stylish 
 
 
 ![screenshot of search page](https://github.com/.......JPG)
@@ -69,6 +69,7 @@ This tiny project was created by **Elena Ramírez Reinoso**
 > **Email:** <eramirezreinoso@gmail.com>
 >
 > **Twitter:** [@_ElenaRReinoso](https://twitter.com/_ElenaRReinoso)
+>
 > **LinkedIn:** [@eramirezreinoso](https://www.linkedin.com/in/eramirezreinoso/)
 
-___________________
+___________________________________
