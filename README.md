@@ -4,7 +4,7 @@
 We can visualize a list of characters and we can also filter by character name, specie (human or alien) and select the character we click on a new route.
 In addition, through localStorage we can save our data in the browser.
 
-## Final Project - REACT ⚛️**
+## Final Project - REACT ⚛️
 The object is to create a webpage that lets the user display and filter characters from the TV series Rick and Morty.
 
  **- Requirements**
@@ -46,17 +46,29 @@ The object is to create a webpage that lets the user display and filter characte
 - Visual Studio Code
 
 
-## How to install it? :point_down:
+## How to run this project? :point_down:
 
-In the project directory, you can run:
+- You need to have Node.js installed
 
--  `npm start`
+- Clone or download the repository in your computer.
 
-Runs the app in the development mode.<br />
+To install local dependencies, type:
+
+###npm install
+
+Also, you need to install React Route and SASS:
+
+###npm install --save react-router-dom
+###npm install node-sass
+
+In the project directory, type:
+
+###npm start
+This runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+
 
 
 ##  Creator👋 
@@ -72,4 +84,5 @@ This tiny project was created by **Elena Ramírez Reinoso**
 >
 > **LinkedIn:** [@eramirezreinoso](https://www.linkedin.com/in/eramirezreinoso/)
 
-___________________________________
+_______________________________________________________________________________________________________________
+
