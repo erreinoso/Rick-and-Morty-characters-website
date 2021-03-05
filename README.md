@@ -4,6 +4,9 @@ The objective of this project is to create a web search engine, where through a 
 We can visualize a list of characters and we can also filter by character name, specie (human or alien) and select the character we click on a new route.
 In addition, through localStorage we can save our data in the browser.
 
+Note: This project is done using class components. You could find it with functional components in [this repo](https://github.com/erreinoso/Rick-and-Morty-characters-website-functional-component).
+
+
 ## Final Project - REACT ⚛️
 
 The object is to create a webpage that lets the user display and filter characters from the TV series Rick and Morty.
